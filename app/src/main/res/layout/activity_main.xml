@@ -21,11 +21,38 @@
             android:gravity="center"
             android:textSize="25sp"
             />
+
         <ImageView
-            android:layout_width="128dp"
+            android:id="@+id/picNetShoes"
+            android:layout_width="128sp"
             android:layout_height="128sp"
-            android:src="@drawable/netshoes"
-            android:layout_marginTop="30sp"/>
+            android:layout_marginTop="30sp"
+            android:layout_gravity="center"
+            android:src="@drawable/netshoes" />
+
+        <ImageView
+            android:id="@+id/picMercadoLivre"
+            android:layout_width="128sp"
+            android:layout_height="128sp"
+            android:layout_marginTop="30sp"
+            android:layout_gravity="center"
+            android:src="@drawable/mercadolivre" />
+
+        <ImageView
+            android:id="@+id/picAmericanas"
+            android:layout_width="128sp"
+            android:layout_height="128sp"
+            android:layout_marginTop="30sp"
+            android:layout_gravity="center"
+            android:src="@drawable/lojasamericanas"/>
+
+        <Button
+            android:id="@+id/btnSobre"
+            android:layout_width="128sp"
+            android:layout_height="50sp"
+            android:text="Sobre"
+            android:layout_gravity="center"
+            android:layout_marginTop="50sp"/>
 
     </LinearLayout>
 
