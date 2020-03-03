@@ -28,5 +28,10 @@ class MainActivity : AppCompatActivity() {
             var AmericanasIntent = Intent(this, Americanas::class.java);
             startActivity(AmericanasIntent);
         })
+
+        btnSobre.setOnClickListener({
+            var SobreIntent = Intent(this, Sobre::class.java);
+            startActivity(SobreIntent);
+        })
     }
 }

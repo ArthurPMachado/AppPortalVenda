@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sobre">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20sp">
+
+        <TextView
+            android:id="@+id/txtTittle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="App Portais Venda"
+            android:gravity="center"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/txtAluno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Arthur Pereira Machado - 2TDSF"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_marginTop="20sp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp">
+
+            <TextView
+                android:id="@+id/txtPortal1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Portal 1: "
+                android:textSize="20sp"
+                android:layout_marginTop="10sp"/>
+
+            <EditText
+                android:id="@+id/resAcesso1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:text="teste"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtPortal2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Portal 2: "
+                android:textSize="20sp"
+                android:layout_marginTop="10sp"/>
+
+            <EditText
+                android:id="@+id/resAcesso2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:text="teste"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtPortal3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Portal 3: "
+                android:textSize="20sp"
+                android:layout_marginTop="10sp"/>
+
+            <EditText
+                android:id="@+id/resAcesso3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:text="teste"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Limpar Estatísticas"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30sp"/>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
