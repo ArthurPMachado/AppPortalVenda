@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:text="App Portais Venda"
             android:gravity="center"
-            android:textSize="25sp"
+            android:textSize="30sp"
             />
 
         <TextView
@@ -49,7 +49,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="80dp"
-                android:text="teste"
                 android:textSize="20sp"/>
 
         </RelativeLayout>
@@ -71,7 +70,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="80dp"
-                android:text="teste"
                 android:textSize="20sp"/>
 
         </RelativeLayout>
@@ -93,20 +91,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="80dp"
-                android:text="teste"
                 android:textSize="20sp"/>
 
         </RelativeLayout>
 
         <Button
+            android:id="@+id/btnLimparEstatistica"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Limpar Estatísticas"
             android:textSize="20sp"
             android:layout_gravity="center"
             android:layout_marginTop="30sp"/>
-
-
 
     </LinearLayout>
 
