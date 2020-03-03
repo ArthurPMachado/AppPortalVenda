@@ -17,6 +17,16 @@ class MainActivity : AppCompatActivity() {
         picNetShoes.setOnClickListener({
             var NetShoesIntent = Intent(this, NetShoes::class.java);
             startActivity(NetShoesIntent);
+        });
+
+        picMercadoLivre.setOnClickListener({
+            var MercadoLivreIntent = Intent(this, MercadoLivre::class.java);
+            startActivity(MercadoLivreIntent);
+        });
+
+        picAmericanas.setOnClickListener({
+            var AmericanasIntent = Intent(this, Americanas::class.java);
+            startActivity(AmericanasIntent);
         })
     }
 }
