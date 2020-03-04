@@ -15,6 +15,6 @@ class Ebay : AppCompatActivity() {
         webViewEb.settings.javaScriptEnabled = true;
         webViewEb.settings.displayZoomControls = true;
 
-        webViewEb.loadUrl("https://www.ebay.com.br");
+        webViewEb.loadUrl("https://www.ebay.com");
     }
 }

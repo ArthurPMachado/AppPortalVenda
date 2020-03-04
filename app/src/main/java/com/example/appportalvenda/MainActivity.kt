@@ -60,6 +60,14 @@ class MainActivity : AppCompatActivity() {
             startActivity(BuscapeIntent);
         }
 
+        picEbay.setOnClickListener{
+
+
+            // Redirecionar para outra tela
+            var EbayIntent = Intent(this, Ebay::class.java);
+            startActivity(EbayIntent);
+        }
+
         picMagalu.setOnClickListener {
 
 
