@@ -16,10 +16,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        var sh = getSharedPreferences("valores", Context.MODE_PRIVATE);
+        var contador = arrayOf(0,0,0,0,0,0,0,0);
+
         picNetShoes.setOnClickListener({
             // Gravar as vezes que foi clicado
-            var sh = getSharedPreferences("acessos", Context.MODE_PRIVATE);
-            sh.edit().putInt("qtde", resAcesso1.text.toString().toInt()).apply();
+            contador[0] += 1;
+            sh.edit().putInt("qtde", contador[0]);
 
             // Redirecionar para outra tela
             var NetShoesIntent = Intent(this, NetShoes::class.java);
@@ -27,7 +30,6 @@ class MainActivity : AppCompatActivity() {
         });
 
         picMercadoLivre.setOnClickListener({
-
 
             // Redirecionar para outra tela
             var MercadoLivreIntent = Intent(this, MercadoLivre::class.java);
@@ -40,7 +42,39 @@ class MainActivity : AppCompatActivity() {
             // Redirecionar para outra tela
             var AmericanasIntent = Intent(this, Americanas::class.java);
             startActivity(AmericanasIntent);
-        })
+        });
+
+        picWebMotors.setOnClickListener {
+
+
+            // Redirecionar para outra tela
+            var WebMotorsIntent = Intent(this, WebMotors::class.java);
+            startActivity(WebMotorsIntent);
+        }
+
+        picBuscape.setOnClickListener {
+
+
+            // Redirecionar para outra tela
+            var BuscapeIntent = Intent(this, Buscape::class.java);
+            startActivity(BuscapeIntent);
+        }
+
+        picMagalu.setOnClickListener {
+
+
+            // Redirecionar para outra tela
+            var MagaluIntent = Intent(this, Magalu::class.java);
+            startActivity(MagaluIntent);
+        }
+
+        picSubmarino.setOnClickListener {
+
+
+            // Redirecionar para outra tela
+            var SubmarinoIntent = Intent(this, Submarino::class.java);
+            startActivity(SubmarinoIntent);
+        }
 
         btnSobre.setOnClickListener({
 
@@ -48,6 +82,6 @@ class MainActivity : AppCompatActivity() {
             // Redirecionar para outra tela
             var SobreIntent = Intent(this, Sobre::class.java);
             startActivity(SobreIntent);
-        })
+        });
     }
 }

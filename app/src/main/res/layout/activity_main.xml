@@ -22,37 +22,99 @@
             android:textSize="30sp"
             />
 
-        <ImageView
-            android:id="@+id/picNetShoes"
-            android:layout_width="128sp"
-            android:layout_height="128sp"
-            android:layout_marginTop="10sp"
-            android:layout_gravity="center"
-            android:src="@drawable/netshoes" />
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="28sp">
 
-        <ImageView
-            android:id="@+id/picMercadoLivre"
-            android:layout_width="128sp"
-            android:layout_height="128sp"
-            android:layout_marginTop="10sp"
-            android:layout_gravity="center"
-            android:src="@drawable/mercadolivre" />
+            <ImageView
+                    android:id="@+id/picNetShoes"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/netshoes"
+                    android:layout_marginStart="30sp"/>
 
-        <ImageView
-            android:id="@+id/picAmericanas"
-            android:layout_width="128sp"
-            android:layout_height="128sp"
-            android:layout_marginTop="10sp"
-            android:layout_gravity="center"
-            android:src="@drawable/lojasamericanas"/>
+            <ImageView
+                    android:id="@+id/picMercadoLivre"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/mercadolivre"
+                    android:layout_marginStart="52dp"
+                    android:layout_toEndOf="@+id/picNetShoes"/>
+
+            <ImageView
+                    android:id="@+id/picAmericanas"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:layout_marginTop="22dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/lojasamericanas"
+                    android:layout_below="@+id/picNetShoes"
+                    android:layout_marginStart="30sp"/>
+
+            <ImageView
+                    android:id="@+id/picWebMotors"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:layout_marginTop="22dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/webmotors"
+                    android:layout_below="@+id/picMercadoLivre"
+                    android:layout_marginStart="52dp"
+                    android:layout_toEndOf="@+id/picAmericanas"/>
+
+            <ImageView
+                    android:id="@+id/picBuscape"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:layout_marginTop="22dp"
+                    android:src="@drawable/buscape"
+                    android:layout_below="@+id/picAmericanas"
+                    android:layout_marginStart="30sp"/>
+
+            <ImageView
+                    android:id="@+id/picEbay"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:layout_marginTop="22dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ebay"
+                    android:layout_below="@+id/picWebMotors"
+                    android:layout_marginStart="52dp"
+                    android:layout_toEndOf="@+id/picBuscape"/>
+
+            <ImageView
+                    android:id="@+id/picMagalu"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:layout_marginTop="22dp"
+                    android:src="@drawable/magalu"
+                    android:layout_below="@+id/picBuscape"
+                    android:layout_marginStart="30sp"/>
+
+            <ImageView
+                    android:id="@+id/picSubmarino"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:layout_marginTop="22dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/submarino"
+                    android:layout_below="@+id/picEbay"
+                    android:layout_marginStart="52dp"
+                    android:layout_toEndOf="@+id/picMagalu"/>
+
+        </RelativeLayout>
+
 
         <Button
             android:id="@+id/btnSobre"
             android:layout_width="128sp"
             android:layout_height="50sp"
             android:text="Sobre"
-            android:layout_gravity="center"
-            android:layout_marginTop="20sp"/>
+            android:layout_gravity="center"/>
 
     </LinearLayout>
 

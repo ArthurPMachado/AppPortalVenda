@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.appportalvenda">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -11,22 +11,42 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Sobre"
-            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".Submarino"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".Magalu"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".Ebay"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".Buscape"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".WebMotors"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".Sobre"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".Americanas"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".MercadoLivre"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".NetShoes"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
     </application>
