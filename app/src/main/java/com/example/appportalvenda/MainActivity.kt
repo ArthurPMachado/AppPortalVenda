@@ -16,14 +16,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var sh = getSharedPreferences("valores", Context.MODE_PRIVATE);
-        var contador = arrayOf(0,0,0,0,0,0,0,0);
-
         picNetShoes.setOnClickListener({
-            // Gravar as vezes que foi clicado
-            contador[0] += 1;
-            sh.edit().putInt("qtde", contador[0]);
-
             // Redirecionar para outra tela
             var NetShoesIntent = Intent(this, NetShoes::class.java);
             startActivity(NetShoesIntent);
